@@ -19,9 +19,8 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         
-            name: "DigitalReefSDK",            url: "https://github.com/ShamSundar17/iOSTestDRSPM/releases/download/4.4.0/DigitalReefSDK_4.4.0.zip",
+            name: "DigitalReefSDK",            url: "https://github.com/ShamSundar17/iOSTestDRSPM/releases/download/4.4.1/DigitalReefSDK_4.4.1.zip",
             checksum: "ca040a5a7c7aabf458d06f4296982fa2e3d6ec35616e84d633fedd8c01068cfa"
-            checksum: ""
         ),
         .target(
             name: "iOSTestDRSPM",
