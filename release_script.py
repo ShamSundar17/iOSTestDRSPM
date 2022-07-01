@@ -9,7 +9,7 @@ def update_file(version_code: str, checksum: str):
     list_of_lines[21] = f"        .binaryTarget(name: \"DigitalReefSDK\",\n"
     list_of_lines[22] = f"                      url: \"https://github.com/ShamSundar17/iOSTestDRSPM/releases/download/" \
                         f"{version_code}/DigitalReefSDK_{version_code}.zip\",\n"
-    list_of_lines[23] = f"                      checksum: \"{checksum}\"),\n"
+    list_of_lines[23] = f"                      checksum: \"{checksum}\"),"
 
     a_file = open("Package.swift", "w")
     a_file.writelines(list_of_lines)
