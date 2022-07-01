@@ -17,7 +17,7 @@ done
 git add .
 git commit -m "$MESSAGE" --quiet
 git push -u origin main --quiet
-# gh release create $VERSION ../Digita1Reef/DigitalReefiOS/build/SDK_$VERSION.zip
+gh release create $VERSION ../Digita1Reef/DigitalReefiOS/build/SDK_$VERSION.zip
 
 
 
