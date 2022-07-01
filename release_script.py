@@ -19,6 +19,8 @@ def update_file(version_code: str, checksum: str):
 
 
 def git_push(message: str, tag_name: str):
+    print(f"tag_name:{tag_name}")
+    print(f"message:{message}")
     #sh ../SDKiOS-SP/git_commands.sh -v="x.x.x" -m="commit message"
     command = f"sh git_commands.sh -v=\"{tag_name}\" -m=\"{message}\""
     output = subprocess.run(command, capture_output=True, shell=True)
