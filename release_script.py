@@ -6,8 +6,10 @@ def update_file(version_code: str, checksum: str):
     original_file = open("Package.swift", "r")
     list_of_lines = original_file.readlines()
     
-    list_of_lines[20] = f"        .binaryTarget(name: \"DigitalReefSDK\", url: \"https://github.com/ShamSundar17/iOSTestDRSPM/releases/download/{version_code}/DigitalReefSDK_{version_code}.zip\", checksum: \"{checksum}\"),"
-
+    list_of_lines[22] = f"        .binaryTarget(name: \"DigitalReefSDK\", url: \"https://github.com/ShamSundar17/iOSTestDRSPM/releases/download/{version_code}/DigitalReefSDK_{version_code}.zip\", checksum: \"{checksum}\"),\n"
+    list_of_lines[23] = f"        .target(name: \"iOSTestDRSPM\",dependencies: [.target(name: \"DigitalReefSDK\")],path:\"Sources\"),\n"
+    list_of_lines[24] = f"        .testTarget(name: \"iOSTestDRSPMTests\",dependencies: [\"iOSTestDRSPM\"])"
+    
     a_file = open("Package.swift", "w")
     a_file.writelines(list_of_lines)
     a_file.close()
