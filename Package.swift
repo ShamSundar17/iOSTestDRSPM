@@ -22,8 +22,7 @@ let package = Package(
                       checksum: "ca040a5a7c7aabf458d06f4296982fa2e3d6ec35616e84d633fedd8c01068cfa"),            name: "iOSTestDRSPM",
         .binaryTarget(name: "DigitalReefSDK", url: "https://github.com/ShamSundar17/iOSTestDRSPM/releases/download/4.4.3/DigitalReefSDK_4.4.3.zip", checksum: "ca040a5a7c7aabf458d06f4296982fa2e3d6ec35616e84d633fedd8c01068cfa"),
         .target(name: "iOSTestDRSPM",dependencies: [.target(name: "DigitalReefSDK")],path:"Sources"),
-        .testTarget(name: "iOSTestDRSPMTests",dependencies: ["iOSTestDRSPM"])            path:"Sources"),
-        .testTarget(
+        .testTarget(name: "iOSTestDRSPMTests",dependencies: ["iOSTestDRSPM"])        .testTarget(
             name: "iOSTestDRSPMTests",
             dependencies: ["iOSTestDRSPM"])
     ]
