@@ -21,7 +21,7 @@ let package = Package(
         
         .binaryTarget(
             url: "https://github.com/ShamSundar17/iOSTestDRSPM/releases/download/None/DigitalReefSDK_None.zip",
-            checksum: "c756112431058f2ea311139526c048277fe36459b8103738bc9e91fda2f869c7"
+            checksum: "ca040a5a7c7aabf458d06f4296982fa2e3d6ec35616e84d633fedd8c01068cfa"
             checksum: ""
         ),
         .target(
