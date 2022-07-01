@@ -2,7 +2,7 @@ import subprocess
 
 from argparse import ArgumentParser
 
-
+version_code = "4.4.0"
 def update_file(version_code: str, checksum: str):
     original_file = open("Package.swift", "r")
     list_of_lines = original_file.readlines()
